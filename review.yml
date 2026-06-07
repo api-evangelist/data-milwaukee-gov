@@ -1,0 +1,18 @@
+name: Milwaukee Open Data
+description: Milwaukee Open Data CKAN open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-milwaukee-gov/refs/heads/main/review.yml
+created: '2026-06-07'
+modified: '2026-06-07'
+reviews:
+  - date: '2026-06-07'
+    rating: 4
+    summary: >-
+      Milwaukee Open Data runs CKAN and exposes a live, standardized open-data catalog API. The
+      endpoint was probed and returned a valid CKAN JSON response reporting approximately 186 datasets (CKAN version 2.9.11).
+    endpoints:
+      - url: https://data.milwaukee.gov/api/3/action/status_show
+        status: 200
+        note: Live CKAN API response verified.
+      - url: https://data.milwaukee.gov
+        status: 200
+        note: Portal home.
